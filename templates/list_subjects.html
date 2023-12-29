@@ -1,0 +1,7 @@
+{% for sub in subs %}
+{% if sub.id == sub_selected %}
+<li class="selected">{{sub.name}}</li>
+{% else %}
+<li><a href="{{ sub.get_absolute_url }}">{{sub.name}}</a></li>
+{% endif %}
+{% endfor %}
