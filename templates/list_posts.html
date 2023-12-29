@@ -2,7 +2,7 @@
 <ul class="list-articles">
 	{% for p in posts %}
 			<li><div class="article-panel">
-	<p class="first">Категория: {{p.subject.name}} | публікатор:
+	<p class="first">Категорія: {{p.subject.name}} | публікатор:
 	{{ p.author.user.username|default:"Невідомий" }}</p>
 	<p class="last">Дата: {{p.published|date:"d-m-Y H:i:s"}}</p>
     </div>
