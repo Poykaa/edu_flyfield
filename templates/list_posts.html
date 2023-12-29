@@ -2,8 +2,8 @@
 <ul class="list-articles">
 	{% for p in posts %}
 			<li><div class="article-panel">
-	<p class="first">Категория: {{p.subject.name}} | автор:
-	{{ p.author.user.username|default:"неизвестен" }}</p>
+	<p class="first">Категория: {{p.subject.name}} | публікатор:
+	{{ p.author.user.username|default:"Невідомий" }}</p>
 	<p class="last">Дата: {{p.published|date:"d-m-Y H:i:s"}}</p>
     </div>
 {% if p.image %}
@@ -15,7 +15,7 @@
 	{{p.content|linebreaks|truncatewords:25}}
     {% endautoescape %}
 			<div class="clear"></div>
-			<p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читать пост</a></p>
+			<p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читати публікацію</a></p>
 			</li>
 	{% endfor %}
 </ul>
