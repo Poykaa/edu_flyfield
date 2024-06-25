@@ -26,6 +26,9 @@ urlpatterns = [
     path('accounts/', include('users.urls', namespace='users')),
     path('posts/', include('posts.urls', namespace='posts')),
     path('subject/', include('subjects.urls', namespace='subjects')),
+    path('main/', views.main, name='main'),
+    path('additional/', views.additional, name='additional'),
+    path('about/', views.about, name='about'),
     path('', views.home, name='home'),
 ]
 
