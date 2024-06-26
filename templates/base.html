@@ -16,6 +16,7 @@
 {% block mainmenu %}
 		<div class="header">
 			<ul id="mainmenu" class="mainmenu">
+				<li class="logo"><a href="{% url 'main' %}"><div class="logo"></div></a></li>
 				<li><a href="{% url 'main' %}"><div>Головна</div></a></li>
 			<li><a href="{% url 'posts:add_post' %}"><div>Створити пост</div></a></li>
 				<li><a href="{% url 'additional' %}"><div>Корисні посилання</div></a></li>
