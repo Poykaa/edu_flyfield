@@ -19,6 +19,7 @@
 				<li class="logo"><a href="{% url 'main' %}"><div class="logo"></div></a></li>
 				<li><a href="{% url 'main' %}"><div>Головна</div></a></li>
 			<li><a href="{% url 'posts:add_post' %}"><div>Створити пост</div></a></li>
+				<li><a href="{% url 'videos' %}"><div>Цікаві відео</div></a></li>
 				<li><a href="{% url 'additional' %}"><div>Корисні посилання</div></a></li>
 				<li><a href="{% url 'about' %}"><div>Контакти студента</div></a></li>
 {% if user.is_authenticated %}

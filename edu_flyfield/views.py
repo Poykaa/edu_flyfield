@@ -15,3 +15,7 @@ def main(request):
 
 def about(request):
     return render(request, 'about.html')
+
+
+def videos(request):
+    return render(request, 'videos.html')
