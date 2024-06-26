@@ -540,3 +540,21 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
+
+
+
+#weather-widget {
+            font-family: Arial, sans-serif;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #weather-widget h2 {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+        }
+        #weather-widget p {
+            margin: 5px 0;
+        }
